@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Start header */
+
+header nav ul.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav a {
+  font-weight: bold;
+}
+
+header nav .navbar-brand {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100vh - 90px);
+  z-index: -1;
+  position: absolute;
+}
+
+/* End header */
+
+/* Start home */
+
+.home div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 1040px;
+}
+
+.home h1 {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.home h4 {
+  font-size: 2rem;
+}
+
+/* End home */
+
+/* Start journeys */
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.btns div {
+  padding: 20px;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid rgb(160, 160, 160);
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: #eff3ff;
+  color: #424bad;
+}
+
+/* End journeys */
+
+/* Start card */
+
+.card:hover {
+  background-color: #991e66;
+  color: white;
+}
+.card {
+  border: none;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+}
+
+.card h1 {
+  font-size: 30px;
+}
+
+.card p {
+  font-size: 20px;
+  background-color: #991e66;
+  color: white;
+  padding: 5px;
+  width: 25%;
+  text-align: center;
+}
+
+/* End card */
+
+/* Start Journeys */
+
+.journeys main {
+  height: calc(100vh - 90px);
+  background-image: url(./assets/img-8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.journeys main h1 {
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: cursive;
+}
+
+.journeys button {
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 15px;
+  transform: scale(1.2);
+  font-size: 20px;
+  z-index: 999;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+.mobile {
+  background-image: url("https://ak-s.tripcdn.com/modules/ibu/online-home/32c7b4fc1c944b9629338330d74e5df1.32c7b4fc1c944b9629338330d74e5df1.webp");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.mobile-content {
+  width: 40%;
+}
+
+.mobile .mobile-content h1 {
+  font-size: 4rem;
+}
+
+.mobile .mobile-img img {
+  width: 300px;
+  transform: scale(1.2);
+  border: 20px solid white;
+  border-radius: 50px;
+}
+
+.mobile .btns {
+  justify-content: flex-start;
+  font-weight: bold;
+  padding: 0;
+}
+
+.mobile .btns div {
+  border: 1px solid white;
+  margin: 0;
+}
+
+.mobile .contact p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mobile input {
+  width: 400px;
+  padding: 20px;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid white;
+}
+
+.mobile input::placeholder {
+  color: white;
+  font-size: 1.4rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.destinations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dist-card img {
+  width: 450px;
+  height: 350px;
+}
+
+/* End journeys */
+
+/* Start contact */
+
+.contact .form-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.contact .done {
+  color: green;
+}
+
+form {
+  transform: scale(1.2);
+  margin: 100px 0;
+}
+
+form p {
+  color: red;
+  font-size: 14px;
+}
+
+form button {
+  background-color: #991e66;
+}
+
+/* End contact */
+
+/* Start footer */
+
+footer {
+  background-color: #242424;
+  color: white;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer .column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer input {
+  width: 280px;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+}
+
+footer .subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer button {
+  background-color: #242424;
+  border: 2px solid white;
+  color: white;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+/* End footer */
