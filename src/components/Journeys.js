@@ -4,7 +4,6 @@ import flightsData from "../flightsData";
 import carsData from "../carsData";
 import Card from "./Card";
 import destinationsData from "../destinationsData";
-import DestinationsCard from "./DestinationsCard";
 
 const Journeys = () => {
   const [active, setActive] = useState("train");
@@ -25,10 +24,6 @@ const Journeys = () => {
       destinationsList.push(destinations[i]);
     }
   }, [startInd, endInd]);
-
-  const destList = destinationsList.map((item) => {
-    return <DestinationsCard item={item} key={item.id} />;
-  });
 
   function trainClick() {
     setActive("train");
